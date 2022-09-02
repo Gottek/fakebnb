@@ -1,17 +1,22 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import LandingPage from "../components/index-page/LandingPage";
+import Footer from "../components/layout/Footer";
 import Header from "../components/layout/Header";
+import Navigation from "../components/layout/Navigation";
 
 const Home: NextPage = () => {
   return (
     <>
-      <Header />
+      <Head>
+        <title>NextJS Blog with Butter CMS</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div>
-        <Head>
-          <title>NextJS Blog with Butter CMS</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
-        <h1> NextJS Blog with Butter CMS</h1>
+        <Header />
+        <Navigation />
+        <LandingPage />
+        <Footer />
       </div>
     </>
   );

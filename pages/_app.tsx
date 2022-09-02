@@ -1,6 +1,7 @@
 import { createGlobalStyle, ThemeProvider } from "styled-components";
 // import AcehFont from "../public/fonts/Aceh-Light.ttf";
 import type { AppProps } from "next/app";
+import "../styles/globals.css";
 
 const theme = {
   colors: {
@@ -27,10 +28,7 @@ body{
   padding:0;
 }
 
-/* @font-face {
-  font-family: 'Aceh-Light';
-  src: url(${AcehFont}) format('ttf')
-} */
+
 `;
 
 function MyApp({ Component, pageProps }: AppProps) {

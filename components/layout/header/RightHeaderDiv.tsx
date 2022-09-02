@@ -9,6 +9,7 @@ const StyledRightHeaderDiv = styled.div`
     display: none;
   }
   display: flex;
+  justify-content: right;
   gap: 15px;
   align-items: center;
   font-family: "Handlee", cursive;
